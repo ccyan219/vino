@@ -7,6 +7,10 @@ class Location < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :wines,
+             :through => :catalogs,
+             :source => :wine
+
   # Validations
 
 end

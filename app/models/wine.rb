@@ -7,6 +7,10 @@ class Wine < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :locations,
+             :through => :catalogs,
+             :source => :location
+
   # Validations
 
 end
