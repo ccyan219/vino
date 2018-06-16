@@ -28,6 +28,7 @@ class WinesController < ApplicationController
     @wine.body = params[:body]
     @wine.variety = params[:variety]
     @wine.origin = params[:origin]
+    @wine.image = params[:image]
 
     save_status = @wine.save
 
@@ -60,6 +61,7 @@ class WinesController < ApplicationController
     @wine.body = params[:body]
     @wine.variety = params[:variety]
     @wine.origin = params[:origin]
+    @wine.image = params[:image]
 
     save_status = @wine.save
 

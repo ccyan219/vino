@@ -7,6 +7,7 @@ class CreateWines < ActiveRecord::Migration
       t.string :body
       t.string :variety
       t.string :origin
+      t.string :image
 
       t.timestamps
 
