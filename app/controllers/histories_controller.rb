@@ -49,8 +49,6 @@ class HistoriesController < ApplicationController
 
   def update
     @history = History.find(params[:id])
-
-    @history.user_id = params[:user_id]
     @history.favorite = params[:favorite]
     @history.comments = params[:comments]
     @history.listing_id = params[:listing_id]
