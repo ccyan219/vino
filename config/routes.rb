@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "wines#index"
   # Routes for the History resource:
   # CREATE
   get "/histories/new", :controller => "histories", :action => "new"
