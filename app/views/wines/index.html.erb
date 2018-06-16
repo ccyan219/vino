@@ -110,6 +110,7 @@
         <th>Body</th>
         <th>Variety</th>
         <th>Origin</th>
+        <th>Image</th>
         <th>Actions</th>
       </tr>
 
@@ -121,6 +122,7 @@
         <td><%= wine.body %></td>
         <td><%= wine.variety %></td>
         <td><%= wine.origin %></td>
+        <td><img src='<%= wine.image %>' class='img-responsive'></td>
         <td>
           <a href="/wines/<%= wine.id %>" class="btn btn-primary">Show</a>
           <a href="/wines/<%= wine.id %>/edit" class="btn btn-warning">Edit</a>
